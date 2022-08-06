@@ -1,0 +1,76 @@
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container-video{
+    width: 800px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+#video{
+    width: 100%;
+    height: 100%;
+}
+.controle-video{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    bottom: 0;
+    background-color: rgba(95, 88, 88, 0.521);
+    transform: translateY(70%);
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+}
+.container-video:hover .controle-video{
+    transform: translateY(-50%);
+}
+.barre-orange{
+    width: 100%;
+    height: 15px;
+    background-color: rgba(0, 0, 0, 0.616);
+    position: relative;
+    cursor: pointer;
+}
+.jus-orange{
+    width: 100%;
+    height: 15px;
+    background-color: orange;
+    cursor: pointer;
+}
+
+.buttoms {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.buttoms button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3em;
+    color: #fff;
+    background-color: transparent;
+    border: 0;
+    margin:5px 8px;
+    cursor: pointer;
+}
+#plein-ecran{
+    position: absolute;
+    right: 0.5em;
+}
